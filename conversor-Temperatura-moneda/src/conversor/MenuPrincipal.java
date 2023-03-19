@@ -21,7 +21,7 @@ public class MenuPrincipal {
 	        switch (opciones) {
 	          case "Monedas": {
 
-	            // validar que el valor ingresado sea un #
+	            // validar que el valor ingresado sea un ##
 	            String input = JOptionPane.showInputDialog("Ingrese cantidad a convertir");
 
 	            while (!esNumero(input)) {

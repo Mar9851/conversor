@@ -22,7 +22,7 @@ public class MenuPrincipal {
 	          case "Monedas": {
 
 	            // validar que el valor ingresado sea un #
-	            String input = JOptionPane.showInputDialog("Ingrese los $$ a convertir");
+	            String input = JOptionPane.showInputDialog("Ingrese cantidad a convertir");
 
 	            while (!esNumero(input)) {
 	              JOptionPane.showMessageDialog(null, "Ha ingresado un valor inválido", "Error", JOptionPane.ERROR_MESSAGE);
@@ -38,42 +38,42 @@ public class MenuPrincipal {
 	          }
 	            break;
 
-	          case "Temperatura": {
-	            String input = JOptionPane.showInputDialog("Ingrese la T° a convertir");
-	            while (!esNumero(input)) {
-	              JOptionPane.showMessageDialog(null, "Ha ingresado un valor inválido", "Error", JOptionPane.ERROR_MESSAGE);
-	              input = JOptionPane.showInputDialog(null, "Por favor ingrese el valor");
-	            }
+//	          case "Temperatura": {
+//	            String input = JOptionPane.showInputDialog("Ingrese la T° a convertir");
+//	            while (!esNumero(input)) {
+//	              JOptionPane.showMessageDialog(null, "Ha ingresado un valor inválido", "Error", JOptionPane.ERROR_MESSAGE);
+//	              input = JOptionPane.showInputDialog(null, "Por favor ingrese el valor");
+//	            }
+//
+//	            double temperaturaRecibida = Double.parseDouble(input);
+//	            temperatura.convertirTemperatura(temperaturaRecibida);
+//
+//	            int seleccion = JOptionPane.showConfirmDialog(null, "¿Quiere volver a convertir?");
+//	            System.out.println(seleccion);
+//	          }
+//	            break;
 
-	            double temperaturaRecibida = Double.parseDouble(input);
-	            temperatura.convertirTemperatura(temperaturaRecibida);
-
-	            int seleccion = JOptionPane.showConfirmDialog(null, "¿Quiere volver a convertir?");
-	            System.out.println(seleccion);
-	          }
-	            break;
-
-	          case "Tiempo": {
-	            String input = JOptionPane.showInputDialog("Ingrese el valor a convertir");
-	            while (!esNumero(input)) {
-	              JOptionPane.showMessageDialog(null, "Ha ingresado un valor inválido", "Error", JOptionPane.ERROR_MESSAGE);
-	              input = JOptionPane.showInputDialog(null, "Por favor ingrese el valor");
-	            }
-
-	            double tiempoRecibido = Double.parseDouble(input);
-	            tiempo.convertirTiempo(tiempoRecibido);
-
-	            int seleccion = JOptionPane.showConfirmDialog(null, "¿Quiere volver a convertir?");
-	            System.out.println(seleccion);
-	          }
-	            break;
-
+//	          case "Tiempo": {
+//	            String input = JOptionPane.showInputDialog("Ingrese el valor a convertir");
+//	            while (!esNumero(input)) {
+//	              JOptionPane.showMessageDialog(null, "Ha ingresado un valor inválido", "Error", JOptionPane.ERROR_MESSAGE);
+//	              input = JOptionPane.showInputDialog(null, "Por favor ingrese el valor");
+//	            }
+//
+//	            double tiempoRecibido = Double.parseDouble(input);
+//	            tiempo.convertirTiempo(tiempoRecibido);
+//
+//	            int seleccion = JOptionPane.showConfirmDialog(null, "¿Quiere volver a convertir?");
+//	            System.out.println(seleccion);
+//	          }
+//	            break;
+//
 	          default:
 	            break;
 	        }
 	      } while (JOptionPane.YES_OPTION == menuSi);
 	    } catch (Exception e) {
-	      JOptionPane.showMessageDialog(null, "¡Vuelva pronto!");
+	      JOptionPane.showMessageDialog(null, "¡Gracias por su visita!");
 	    }
 	  }
 

@@ -1,4 +1,4 @@
-package conversor;
+package ConversorMedida;
 
 import javax.swing.JOptionPane;
 
